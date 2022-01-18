@@ -58,10 +58,50 @@ class _HomePageState extends State<HomePage> {
                               'https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579'),
                         )),
                   ),
+                  Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text(
+                        "Bitcoin",
+                        style: TextStyle(
+                            color: Colors.grey[900],
+                            fontWeight: FontWeight.bold,
+                            fontSize: 25),
+                      ),
+                      Text(
+                        "btc",
+                        style: TextStyle(color: Colors.grey[900], fontSize: 20),
+                      )
+                    ],
+                  ),
+                  Expanded(
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          Text(
+                            "37000",
+                            style: TextStyle(
+                                color: Colors.grey[900],
+                                fontWeight: FontWeight.bold,
+                                fontSize: 25),
+                          ),
+                          Text(
+                            "-1.18317%",
+                            style:
+                                TextStyle(color: Colors.grey[900], fontSize: 20),
+                          ),
+                        ],
+                      ),
+                    ),
+                  ),
                 ],
               ),
             ),
-          )
+          ),
         ],
       ),
     );
