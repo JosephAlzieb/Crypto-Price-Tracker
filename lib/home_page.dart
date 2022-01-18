@@ -56,6 +56,11 @@ class _HomePageState extends State<HomePage> {
               imageUrl: 'https://assets.coingecko.com/coins/images/878/large/decentraland-mana.png?1550108745',
               price:  2.87,
               changePrecentage: -2.9),
+          CoinCard(name: "Litecoin",
+              symbol: "ltc",
+              imageUrl: 'https://assets.coingecko.com/coins/images/2/large/litecoin.png?1547033580',
+              price:   142.81,
+              changePrecentage: 0.32),
 
         ],
       ),
