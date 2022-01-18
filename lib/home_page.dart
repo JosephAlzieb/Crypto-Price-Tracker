@@ -1,7 +1,8 @@
+import 'package:crypto_price_tracker/widgets.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
-  const HomePage({Key? key}) : super(key: key);
+  const HomePage({Key key}) : super(key: key);
 
   @override
   _HomePageState createState() => _HomePageState();
@@ -21,6 +22,47 @@ class _HomePageState extends State<HomePage> {
             color: Colors.grey[900],
           ),
         ),
+      ),
+      body: ListView(
+        children: [
+          Padding(
+            padding: const EdgeInsets.all(10.0),
+            child: Container(
+              width: MediaQuery.of(context).size.width,
+              height: 100,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.circular(12),
+                boxShadow: [
+                  getBoxShadow(Colors.grey[600], const Offset(4, 4)),
+                  getBoxShadow(Colors.white, const Offset(-4, -4)),
+                ],
+              ),
+              child: Row(
+                children: [
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Container(
+                        height: 65,
+                        width: 65,
+                        decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(12),
+                          boxShadow: [
+                            getBoxShadow(Colors.grey[500], const Offset(4, 4)),
+                            getBoxShadow(Colors.white, const Offset(-4, -4)),
+                          ],
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.all(8.0),
+                          child: Image.network(
+                              'https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579'),
+                        )),
+                  ),
+                ],
+              ),
+            ),
+          )
+        ],
       ),
     );
   }
