@@ -84,7 +84,7 @@ class CoinCard extends StatelessWidget {
                     Text(
                       changePrecentage.toDouble() > 0 ?
                       "+" + changePrecentage.toDouble().toString() + "%":
-                      "-" + changePrecentage.toDouble().toString() + "%",
+                      changePrecentage.toDouble().toString() + "%",
                       style: TextStyle(
                         color: changePrecentage.toDouble() > 0 ? Colors.green:Colors.red,
                         fontSize: 20,
