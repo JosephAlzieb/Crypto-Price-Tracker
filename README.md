@@ -1,5 +1,7 @@
 # crypto_price_tracker
 
-![foxdemo](https://github.com/JosephAlzieb/Crypto-Price-Tracker/blob/master/screenshots/1.png)
 
-![foxdemo](https://github.com/JosephAlzieb/Crypto-Price-Tracker/blob/master/screenshots/2.png)
+
+<img src="https://github.com/JosephAlzieb/Crypto-Price-Tracker/blob/master/screenshots/1.png" width="300" height="600">
+
+<img src="https://github.com/JosephAlzieb/Crypto-Price-Tracker/blob/master/screenshots/2.png" width="300" height="600">
